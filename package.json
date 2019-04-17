@@ -9,6 +9,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -25,8 +26,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@storybook/addon-info": "^5.0.9",
     "@storybook/react": "^5.0.9",
     "babel-loader": "^8.0.5",
-    "@storybook/addon-info": "^5.0.9"
+    "source-map-explorer": "^1.8.0"
   }
 }
