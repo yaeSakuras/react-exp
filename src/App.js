@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from 'react';
+import { auth } from "./services/api";
 
 class App extends Component {
   render() {
-    const env = process.env.NODE_ENV;
-    const v = process.env.REACT_APP_VERSION;
-    console.log(env);
-    console.log(v);
+    auth({
+      username:'monkey',
+      password:'123456'
+    }).then(res => {
+      console.log(res);
+    });
     return (
       <Fragment>
         <div>hello</div>
