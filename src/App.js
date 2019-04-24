@@ -1,48 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
-import Home from './page/home';
-import About from './page/about';
-import AAA from './page/a';
-import List from './page/list';
-
-const routes = [{
-    path: '/home',
-    component: Home
-}, {
-    path: '/about',
-    component: About,
-    routes: [{
-        path: '/about/a',
-        component: AAA
-    }]
-},{
-    path: '/list',
-    component: List
-}];
-
-function RouteWithSubRoutes(route) {
-    console.log(route);
-    if(route.path === '/'){
-        return (
-            <Route
-                path='/'
-                exact
-                render={() => (
-                    <Redirect to="/home" />
-                )}
-            />
-        );
-    }else{
-        return (
-            <Route
-                path={route.path}
-                render={props => (
-                    <route.component {...props} routes={route.routes}/>
-                )}
-            />
-        );
-    }
-}
+import { BrowserRouter } from "react-router-dom";
+import routes from './router';
+import RouteWithSubRoutes from './assets/js/RouteWithSubRoutes';
 
 class App extends Component {
     render() {
