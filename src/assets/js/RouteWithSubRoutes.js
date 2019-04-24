@@ -27,19 +27,15 @@ function RouteRender(route){
 
 function RouteWithSubRoutes(props) {
     const routes = props.routes;
-    if(routes){
-        return (
-            <Fragment>
-                {
-                    routes.map((route, i) => {
-                        return <RouteRender key={i} {...route} />
-                    })
-                }
-            </Fragment>
-        )
-    }else{
-        return  null;
-    }
+    return (
+        <Fragment>
+            {
+                routes.map((route, i) => {
+                    return <RouteRender key={i} {...route} />
+                })
+            }
+        </Fragment>
+    )
 }
 
 export default RouteWithSubRoutes;
