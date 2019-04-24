@@ -6,11 +6,7 @@ class About extends Component {
         return (
             <div>
                 <div>about</div>
-                {
-                    this.props.routes.map((route, i) => {
-                        return <RouteWithSubRoutes key={i} {...route} />
-                    })
-                }
+                <RouteWithSubRoutes routes={this.props.routes}/>
             </div>
         );
     }

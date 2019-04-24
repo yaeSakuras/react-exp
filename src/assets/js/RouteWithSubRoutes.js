@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{ Fragment } from 'react';
 import { Route, Redirect } from "react-router-dom";
-function RouteWithSubRoutes(route) {
+
+function RouteRender(route){
     if(route.path === '/'){
         return (
             <Route
@@ -20,6 +21,24 @@ function RouteWithSubRoutes(route) {
                 )}
             />
         );
+    }
+}
+
+
+function RouteWithSubRoutes(props) {
+    const routes = props.routes;
+    if(routes){
+        return (
+            <Fragment>
+                {
+                    routes.map((route, i) => {
+                        return <RouteRender key={i} {...route} />
+                    })
+                }
+            </Fragment>
+        )
+    }else{
+        return  null;
     }
 }
 

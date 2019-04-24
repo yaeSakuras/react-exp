@@ -7,11 +7,7 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                {
-                    routes.map((route, i) => {
-                        return <RouteWithSubRoutes key={i} {...route} />
-                    })
-                }
+                <RouteWithSubRoutes routes={routes}/>
             </BrowserRouter>
         );
     }
