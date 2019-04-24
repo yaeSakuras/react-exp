@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from "react-router-dom";
 function RouteWithSubRoutes(route) {
-    console.log(route);
     if(route.path === '/'){
         return (
             <Route

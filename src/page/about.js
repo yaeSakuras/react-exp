@@ -1,17 +1,5 @@
 import React, {Component} from 'react';
-import {Route} from "react-router-dom";
-
-function RouteWithSubRoutes(route) {
-    console.log(route);
-    return (
-        <Route
-            path={route.path}
-            render={props => (
-                <route.component {...props} />
-            )}
-        />
-    );
-}
+import RouteWithSubRoutes from '../assets/js/RouteWithSubRoutes';
 
 class About extends Component {
     render() {
