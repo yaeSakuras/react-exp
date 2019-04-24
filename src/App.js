@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter } from "react-router-dom";
+import React, {Component} from 'react';
+import {BrowserRouter} from "react-router-dom";
 import routes from './router';
 import RouteWithSubRoutes from './assets/js/RouteWithSubRoutes';
 

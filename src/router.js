@@ -1,7 +1,10 @@
-import Home from "./page/home";
-import About from "./page/about";
-import AAA from "./page/a";
-import List from "./page/list";
+import React from 'react';
+const Home = React.lazy(() => import("./page/home"));
+const About = React.lazy(() => import("./page/about"));
+const AAA = React.lazy(() => import("./page/a"));
+const List = React.lazy(() => import("./page/list"));
+// const AAA from "./page/a";
+// const List from "./page/list";
 
 export default [
     {

@@ -1,18 +1,18 @@
-import React,{ Fragment } from 'react';
-import { Route, Redirect } from "react-router-dom";
+import React, {Fragment} from 'react';
+import {Route, Redirect} from "react-router-dom";
 
-function RouteRender(route){
-    if(route.path === '/'){
+function RouteRender(route) {
+    if (route.path === '/') {
         return (
             <Route
                 path='/'
                 exact
                 render={() => (
-                    <Redirect to="/home" />
+                    <Redirect to="/home"/>
                 )}
             />
         );
-    }else{
+    } else {
         return (
             <Route
                 path={route.path}
