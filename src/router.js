@@ -3,8 +3,7 @@ const Home = React.lazy(() => import("./page/home"));
 const About = React.lazy(() => import("./page/about"));
 const AAA = React.lazy(() => import("./page/a"));
 const List = React.lazy(() => import("./page/list"));
-// const AAA from "./page/a";
-// const List from "./page/list";
+const Clock = React.lazy(() => import("./page/clock"));
 
 export default [
     {
@@ -24,5 +23,8 @@ export default [
     },{
         path: '/list',
         component: List
+    },{
+        path: '/clock',
+        component: Clock
     }
 ];
