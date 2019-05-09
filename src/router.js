@@ -5,6 +5,7 @@ const AAA = React.lazy(() => import("./page/a"));
 const List = React.lazy(() => import("./page/list"));
 const Clock = React.lazy(() => import("./page/clock"));
 const Clicks = React.lazy(() => import("./page/clicks"));
+const Child = React.lazy(() => import("./page/child"));
 
 export default [
     {
@@ -30,5 +31,8 @@ export default [
     },{
         path: '/clicks',
         component: Clicks
+    },{
+        path: '/child',
+        component: Child
     }
 ];
