@@ -18,7 +18,7 @@ class RefTest extends Component {
         return (
             <div>
                 <FancyButtons ref={this.ref}/>
-                {/*<FancyButton ref={this.ref}>Click me!</FancyButton>*/}
+                <FancyButton ref={this.ref}>Click me!</FancyButton>
                 <button onClick={this.handle}>heheda</button>
             </div>
         );
