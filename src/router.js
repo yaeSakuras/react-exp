@@ -7,6 +7,7 @@ const Clock = React.lazy(() => import("./page/clock"));
 const Clicks = React.lazy(() => import("./page/clicks"));
 const Child = React.lazy(() => import("./page/child"));
 const RefTest = React.lazy(() => import("./page/refs"));
+const RenderProps = React.lazy(() => import("./page/renderProps"));
 
 export default [
     {
@@ -38,5 +39,8 @@ export default [
     },{
         path: '/reftest',
         component: RefTest
+    },{
+        path: '/renderProps',
+        component: RenderProps
     }
 ];
