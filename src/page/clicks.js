@@ -11,9 +11,11 @@ class Clicks extends Component {
             checkedValues:[]
 
         }
+        this.myRef = React.createRef();
     }
     handleSubmit =(e)=> {
         e.preventDefault();
+        console.log(this.myRef.current);
         console.log(this.state);
     };
     handleChange =(e)=> {
@@ -41,7 +43,7 @@ class Clicks extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <label>name: <input type="text" name="user" value={this.state.user} onChange={this.handleChange}/></label><br/>
+                    <label>name: <input ref={this.myRef} type="text" name="user" value={this.state.user} onChange={this.handleChange}/></label><br/>
                     <label>文章: <textarea name="article" value={this.state.article} onChange={this.handleChange}/></label><br/>
                     checkbox:
                         <input type="checkbox" name="checkedValues" checked={this.state.checkedValues.indexOf('react') !== -1} value="react" onChange={this.handleCheckBoxChange}/>
