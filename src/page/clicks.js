@@ -12,6 +12,7 @@ class Clicks extends Component {
 
         }
         this.myRef = React.createRef();
+        this.input = React.createRef();
     }
     handleSubmit =(e)=> {
         e.preventDefault();
@@ -59,6 +60,7 @@ class Clicks extends Component {
                         <option value="coconut">椰子</option>
                         <option value="mango">芒果</option>
                     </select></label><br/>
+                    <input type="text" defaultValue="Bob" ref={this.input} /><br/>
                     <input type="submit" value="提交"/>
                 </form>
             </div>

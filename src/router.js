@@ -8,6 +8,7 @@ const Clicks = React.lazy(() => import("./page/clicks"));
 const Child = React.lazy(() => import("./page/child"));
 const RefTest = React.lazy(() => import("./page/refs"));
 const RenderProps = React.lazy(() => import("./page/renderProps"));
+const PropType = React.lazy(() => import("./page/propType"));
 
 export default [
     {
@@ -42,5 +43,8 @@ export default [
     },{
         path: '/renderProps',
         component: RenderProps
+    },{
+        path: '/propType',
+        component: PropType
     }
 ];
