@@ -20,7 +20,7 @@ class Child extends React.Component {
                     return child
                 })}
             </div>
-        )
+         )
     }
 }
 
