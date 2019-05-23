@@ -9,6 +9,7 @@ const Child = React.lazy(() => import("./page/child"));
 const RefTest = React.lazy(() => import("./page/refs"));
 const RenderProps = React.lazy(() => import("./page/renderProps"));
 const PropType = React.lazy(() => import("./page/propType"));
+const Life = React.lazy(() => import("./page/life"));
 
 export default [
     {
@@ -46,5 +47,8 @@ export default [
     },{
         path: '/propType',
         component: PropType
+    },{
+        path: '/life',
+        component: Life
     }
 ];
