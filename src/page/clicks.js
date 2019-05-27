@@ -15,6 +15,7 @@ class Clicks extends Component {
         this.input = React.createRef();
     }
     handleSubmit =(e)=> {
+        console.log(e);
         e.preventDefault();
         console.log(this.myRef.current);
         console.log(this.state);

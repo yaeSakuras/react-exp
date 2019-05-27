@@ -10,6 +10,7 @@ const RefTest = React.lazy(() => import("./page/refs"));
 const RenderProps = React.lazy(() => import("./page/renderProps"));
 const PropType = React.lazy(() => import("./page/propType"));
 const Life = React.lazy(() => import("./page/life"));
+const Hook = React.lazy(() => import("./page/hook"));
 
 export default [
     {
@@ -50,5 +51,8 @@ export default [
     },{
         path: '/life',
         component: Life
+    },{
+        path: '/hook',
+        component: Hook
     }
 ];
