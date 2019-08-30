@@ -41,6 +41,11 @@ class Clicks extends Component {
             })
         }
     }
+
+    handleClick = (e)=> {
+        console.log(e);
+    }
+
     render() {
         return (
             <div>
@@ -62,8 +67,13 @@ class Clicks extends Component {
                         <option value="mango">芒果</option>
                     </select></label><br/>
                     <input type="text" defaultValue="Bob" ref={this.input} /><br/>
+                    <input type="checkbox" id="check" />
+                    <label htmlFor="check">ssss</label>
                     <input type="submit" value="提交"/>
                 </form>
+                <div>
+                    <input type="button" value="button" onClick={this.handleClick}/>
+                </div>
             </div>
         )
     }

@@ -11016,6 +11016,11 @@ stack-utils@^1.0.1:
   resolved "https://registry.npm.taobao.org/stack-utils/download/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
   integrity sha1-M+ujiXeIVYvr/C2wWdwVjsNs67g=
 
+statefulreactbutton@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/statefulreactbutton/download/statefulreactbutton-0.0.2.tgz#d3de477b3da5b345c2993a35fb023187745c5a51"
+  integrity sha1-095Hez2ls0XCmTo1+wIxh3RcWlE=
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/static-extend/download/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
